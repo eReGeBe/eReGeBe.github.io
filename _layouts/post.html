@@ -6,6 +6,8 @@ layout: default
   <article>
     {% include article-header.html page=page link=false share=page.share %}
     <section class="post-content">
+      <img class="veredicto"
+          src="{{ site.base_url }}/assets/img/veredictos/{{ page.veredicto }}.jpg">
       {{ content }}
     </section>
     {% include article-footer.html page=page share=page.share %}

@@ -2,12 +2,22 @@
 
 <header>
   <div class="panel">
+    {% if page.foto_emisor %}
+      <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
+          class="foto-emisor">
+        <img src="{{ site.base_url }}/assets/img/emisores/{{ page.foto_emisor }}">
+      </a>
+    {% endif %}
     <h3>
-      {% if include.link %}
-      <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% else %}
-      {{ page.title }}
-      {% endif %}
+      <q>
+        {% if include.link %}
+        <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
+          {{ page.title }}
+        </a>
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+      </q>
     </h3>
 
     <ul class="tags">

@@ -1,5 +1,5 @@
 $(function () {
-  var query = getQuery(["q", "t", "a", "d"]);
+  var query = getQuery(["q", "t", "a", "d", "e"]);
 
   var targets;
   switch (query.key) {
@@ -12,9 +12,11 @@ $(function () {
     case "d":
       targets = ["date"];
       break;
+    case "e":
+      targets = ["emisor"];
     case "q":
     default:
-      targets = ["title", "tags", "author", "url", "date", "content"];
+      targets = ["title", "tags", "author", "url", "date", "content", "emisor"];
       break;
   }
   showPosts(query.words, targets);

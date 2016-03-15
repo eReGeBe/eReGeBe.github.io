@@ -9,6 +9,8 @@ layout: default
     <section class="post-content">
       {% assign size = post.content | split: site.excerpt_separator | size %}
       {% if size > 1 %}
+      <img class="veredicto"
+          src="{{ site.base_url }}/assets/img/veredictos/{{ page.veredicto }}.jpg">
       {{ post.excerpt }}
       <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
       {% else %}
