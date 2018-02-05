@@ -1,8 +1,8 @@
 #
 # Basic settings.
 #
-url: http://esmentira.github.io
-baseurl: ""
+url: ""
+baseurl: "/esmentira-site"
 title: Es Mentira
 description: "\"Nadie miente cuando nadie escucha\" - James Beattie"
 avatar: /assets/img/logo.jpg
