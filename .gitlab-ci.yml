@@ -3,11 +3,27 @@ image: ruby:2.3
 variables:
   JEKYLL_ENV: production
 
-before_script:
-  - bundle install
+stages:
+  - setup
+  - test
+  - deploy
+
+prepare:
+  stage: setup
+  cache:
+    key: gems
+    paths:
+      - vendor/bundle
+  script:
+    - bundle install --deployment
 
 test:
   stage: test
+  cache:
+    key: gems
+    paths:
+      - vendor/bundle
+    policy: pull
   script:
   - bundle exec jekyll build -d test
   artifacts:
@@ -18,6 +34,11 @@ test:
 
 pages:
   stage: deploy
+  cache:
+    key: gems
+    paths:
+      - vendor/bundle
+    policy: pull
   script:
   - bundle exec jekyll build -d public
   artifacts:
