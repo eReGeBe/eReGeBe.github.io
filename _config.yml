@@ -79,9 +79,9 @@ ogp:
   app_id: # facebook application id
 
 #
-# Gems.
+# Plugins.
 #
-gems:
+plugins:
   - jekyll-paginate
 
 #

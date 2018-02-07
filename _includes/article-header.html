@@ -5,7 +5,7 @@
     {% if page.foto_emisor %}
       <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
           class="foto-emisor">
-        <img src="{{ site.base_url }}/assets/img/emisores/{{ page.foto_emisor }}">
+        <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
       </a>
     {% endif %}
     <h3>
