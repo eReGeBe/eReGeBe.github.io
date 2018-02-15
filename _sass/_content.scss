@@ -178,8 +178,17 @@
     }
     .veredicto {
       float: right;
-      max-width: 86px;
+      max-width: 120px;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
+    .resultado {
+        color: $site-title-color;
+    }
+    .post-content{
+      text-align: justify;
+    }
+
     footer {
       margin-top: $margin;
     }

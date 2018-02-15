@@ -4,7 +4,7 @@ title: "En Venezuela se disparó el consumo de perrarina [...] Las madres, pobre
   desesperadas, era lo único que podían comprar para darle de comer a sus hijos"
 emisor: Hugo Chávez
 foto_emisor: chavez.png
-veredicto: 1
+veredicto: 2
 resultado: Posiblemente falso
 ---
 

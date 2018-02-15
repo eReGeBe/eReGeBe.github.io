@@ -5,7 +5,7 @@ url: ""
 baseurl: "/esmentira-site"
 title: Es Mentira
 description: "\"Nadie miente cuando nadie escucha\" - James Beattie"
-avatar: /assets/img/logo.jpg
+avatar: /assets/img/logo.png
 language: es
 
 #
@@ -51,7 +51,7 @@ str_next: Siguiente
 str_prev: Anterior
 str_read_more: Leer más...
 str_search: Buscar
-str_recent_posts: Pulibaciones recientes
+str_recent_posts: Publicaciones recientes
 str_show_all_posts: Mostrar todas las publicaciones
 
 #
