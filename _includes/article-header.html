@@ -32,7 +32,7 @@
       {% endfor %}
     </ul>
 
-    <i class="fa fa-user"></i> {{ page.emisor }}
+    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"><i class="fa fa-user"></i> {{ page.emisor }}</a>
 
     <div class="clearfix">
       <ul class="meta">
@@ -62,12 +62,6 @@
     </div>
   </div>
 
-  {% if site.share_buttons and include.share != false %}
-  <div style="margin-top: 1em;">
-    {% include share-buttons.html page=page %}
-  </div>
-  {% endif %}
-
   {% if include.eye_catch != false and page.eye_catch %}
   <p style="text-align: center">
     <img class="eye-catch" src="{{ page.eye_catch }}"/>
@@ -75,4 +69,4 @@
   {% endif %}
 </header>
 
-<h4>{{ page.resultado }}</h4>
+<h3 class="resultado">{{ page.resultado }}</h3>
