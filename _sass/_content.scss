@@ -61,6 +61,7 @@
       @extend .clearfix;
       list-style: none;
       padding-left: 0;
+
       li {
         float: left;
         margin-right: 1em;
@@ -122,25 +123,34 @@
   article {
     width: 100%;
     float: left;
+
+    .foto-emisor {
+      display: inline-block;
+      float: left;
+      margin-right: 20px;
+      margin-top: 2%;
+      max-width: 90px;
+    }
+
     header {
       margin-bottom: $margin;
       .panel {
-        padding: 1em 1.5em;
         background-color: rgba($page-title-color, .2);
+        margin-left: 10%;
+        margin-bottom: 1.8%;
+        margin-right: 2%;
+        padding-bottom: 1.1%;
         h1 {
           margin: 0;
           &, a {
             color: $page-title-color;
           }
         }
-        .foto-emisor {
-          display: inline-block;
-          float: left;
-          margin-right: 20px;
-          margin-top: 20px;
-          max-width: 100px;
+        h4 {
+          margin: 0;
         }
         h3 q {
+          padding-top: 50px;
           color: $site-title-color;
           font-style: italic;
           &:before, &:after {
@@ -157,7 +167,7 @@
             font-size: 0.95em;
             margin-right: 0.5em;
             &:last-child {
-              margin-right: 0;
+              margin-right: 1.6em;
             }
           }
         }
