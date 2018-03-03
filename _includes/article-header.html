@@ -1,14 +1,15 @@
 {% assign page = include.page %}
 
 <header>
-  {% if page.foto_emisor %}
-  <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
-      class="foto-emisor">
-    <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
-  </a>
-  {% endif %}
   <div class="panel">
     <br>
+    {% if page.foto_emisor %}
+    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
+        class="foto-emisor">
+      <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
+    </a>
+    {% endif %}
+
     <h4>
       <q>
         {% if include.link %}
@@ -38,12 +39,6 @@
         <li>
             <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"><i class="fa fa-user"></i> {{ page.emisor }}</a>
         </li>
-        {% if page.date %}
-        <li>
-          <i class="fa fa-calendar"></i>
-          {{ page.date | date: "%Y-%m-%d" }}
-        </li>
-        {% endif %}
         {% if page.icons %}
         <li>
           <ul class="icons">

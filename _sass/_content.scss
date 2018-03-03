@@ -124,22 +124,20 @@
     width: 100%;
     float: left;
 
-    .foto-emisor {
-      display: inline-block;
-      float: left;
-      margin-right: 20px;
-      margin-top: 2%;
-      max-width: 90px;
-    }
-
     header {
       margin-bottom: $margin;
       .panel {
+        border-radius: 25px;
         background-color: rgba($page-title-color, .2);
-        margin-left: 10%;
         margin-bottom: 1.8%;
         margin-right: 2%;
         padding-bottom: 1.1%;
+        .foto-emisor {
+          margin-left: 2%;
+          float: left;
+          margin-right: 20px;
+          max-width: 100px;
+        }
         h1 {
           margin: 0;
           &, a {
@@ -147,10 +145,11 @@
           }
         }
         h4 {
-          margin: 0;
+          margin-bottom: 1px;
+          margin-top: 5px;
         }
-        h3 q {
-          padding-top: 50px;
+        h4 q {
+          margin: 0;
           color: $site-title-color;
           font-style: italic;
           &:before, &:after {
