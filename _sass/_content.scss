@@ -120,6 +120,12 @@
     margin: $margin 0;
   }
 
+  .post-title-size{
+    h3 {
+      font-size: 1.9em;
+    }
+  }
+
   article {
     width: 100%;
     float: left;
@@ -191,7 +197,7 @@
       margin-left: 10px;
       margin-bottom: 10px;
     }
-    .resultado {
+    .post-title {
         color: $site-title-color;
     }
     .post-content{
