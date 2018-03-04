@@ -2,13 +2,15 @@
 
 <header>
   <div class="panel">
+    <br>
     {% if page.foto_emisor %}
-      <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
-          class="foto-emisor">
-        <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
-      </a>
+    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
+        class="foto-emisor">
+      <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
+    </a>
     {% endif %}
-    <h3>
+
+    <h4>
       <q>
         {% if include.link %}
         <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
@@ -18,7 +20,7 @@
         {{ page.title }}
         {% endif %}
       </q>
-    </h3>
+    </h4>
 
     <ul class="tags">
       {% assign tags_num = (page.tags | size) %}
@@ -32,23 +34,10 @@
       {% endfor %}
     </ul>
 
-    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"><i class="fa fa-user"></i> {{ page.emisor }}</a>
-
     <div class="clearfix">
       <ul class="meta">
-        {% if page.date %}
         <li>
-          <i class="fa fa-calendar"></i>
-          {{ page.date | date: "%Y-%m-%d" }}
-        </li>
-        {% endif %}
-
-        {% if page.author %}
-        <li>
-          <a href="{{ '/search/?a=' | append: page.author | prepend: site.baseurl }}">
-            <i class="fa fa-user"></i>
-            {{ page.author }}
-          </a>
+            <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"><i class="fa fa-user"></i> {{ page.emisor }}</a>
         </li>
         {% if page.icons %}
         <li>
@@ -56,7 +45,6 @@
             {% include icons.html icons=page.icons %}
           </ul>
         </li>
-        {% endif %}
         {% endif %}
       </ul>
     </div>
@@ -69,4 +57,4 @@
   {% endif %}
 </header>
 
-<h3 class="resultado">{{ page.resultado }}</h3>
+<h3 class="post-title">{{ page.post_title }}</h3>
