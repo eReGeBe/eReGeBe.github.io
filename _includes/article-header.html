@@ -4,9 +4,8 @@
   <div class="panel">
     <br>
     {% if page.foto_emisor %}
-    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}"
-        class="foto-emisor">
-      <img src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
+    <a href="{{ '/search/?e=' | append: page.emisor | prepend: site.baseurl }}">
+      <img class="foto-emisor" src="{{ site.baseurl }}/assets/img/emisores/{{ page.foto_emisor }}">
     </a>
     {% endif %}
 
