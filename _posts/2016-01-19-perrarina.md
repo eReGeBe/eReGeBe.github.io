@@ -5,7 +5,7 @@ title: "En Venezuela se disparó el consumo de perrarina [...] Las madres, pobre
 emisor: Hugo Chávez
 foto_emisor: chavez.png
 veredicto: 2
-post_title: Posiblemente falso
+post_title: ¿Es cierto que en Venezuela los pobres comían perrarina?
 ---
 
 El 2 de febrero del 2008, el entonces presidente Hugo Chávez [afirmó](http://www.noticias24.com/actualidad/noticia/11756/video-antes-los-pobres-comian-perrarina-ahora-comen-pollo-y-bistec/) que en gobiernos anteriores los pobres debían recurrir al consumo de alimento para perros. Investigaciones independientes no han podido producir pruebas al respecto.
