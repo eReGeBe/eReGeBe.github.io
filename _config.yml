@@ -2,7 +2,7 @@
 # Basic settings.
 #
 url: ""
-baseurl: "/esmentira-site"
+baseurl: "/"
 title: Es Mentira
 description: "\"Nadie miente cuando nadie escucha\" - James Beattie"
 avatar: /assets/img/logo.png
